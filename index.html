@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Hillary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0f8ff; /* Color de fondo claro */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            padding: 20px;
+        }
+        .message {
+            background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad para mejor legibilidad */
+            padding: 20px;
+            border-radius: 15px;
+            color: #fff;
+            position: relative;
+            max-width: 90%;
+            margin: auto;
+            z-index: 2;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .message h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: moveTitle 10s infinite alternate, changeColor 5s infinite;
+            color: #FFD700;
+        }
+        .message p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .message .highlight {
+            color: #FF69B4; /* Color rosa para resaltar el mensaje */
+            font-weight: bold;
+        }
+        .signature {
+            margin-top: 20px;
+            font-size: 1em;
+            font-style: italic;
+        }
+        .name {
+            position: absolute;
+            font-size: 3em;
+            font-weight: bold;
+            color: #FF69B4; /* Color rosa para el nombre */
+            white-space: nowrap;
+            z-index: 0;
+            pointer-events: none;
+        }
+        @keyframes moveTitle {
+            0% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+        @keyframes changeColor {
+            0% { color: #FFD700; }
+            25% { color: #FF69B4; }
+            50% { color: #32CD32; }
+            75% { color: #00BFFF; }
+            100% { color: #FF6347; }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100vh); }
+        }
+        .heart, .balloon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+        .heart {
+            background: url('imagenes/corazon.png') no-repeat center center;
+        }
+        .balloon {
+            background: url('imagenes/feliz-cumple.png') no-repeat center center;
+        }
+        .heart:nth-child(1) { top: 10%; left: 20%; animation: float 5s linear infinite; }
+        .heart:nth-child(2) { top: 30%; left: 50%; animation: float 6s linear infinite; }
+        .heart:nth-child(3) { top: 50%; left: 80%; animation: float 7s linear infinite; }
+        .heart:nth-child(4) { top: 70%; left: 40%; animation: float 8s linear infinite; }
+        .heart:nth-child(5) { top: 90%; left: 60%; animation: float 9s linear infinite; }
+        .balloon:nth-child(6) { top: 20%; left: 70%; animation: float 10s linear infinite; }
+        .balloon:nth-child(7) { top: 40%; left: 10%; animation: float 12s linear infinite; }
+        .balloon:nth-child(8) { top: 60%; left: 80%; animation: float 14s linear infinite; }
+        .balloon:nth-child(9) { top: 80%; left: 30%; animation: float 16s linear infinite; }
+        .balloon:nth-child(10) { top: 30%; left: 60%; animation: float 18s linear infinite; }
+
+        @media (max-width: 600px) {
+            .message {
+                font-size: 0.8em;
+            }
+            .message h1 {
+                font-size: 2em;
+            }
+            .name {
+                font-size: 2em;
+            }
+        }
+        .heart, .balloon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain; /* Cambia cover por contain para asegurarte de que la imagen se ajuste dentro del contenedor */
+    background-repeat: no-repeat; /* Asegúrate de que la imagen no se repita */
+    z-index: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>¡Feliz Cumpleaños!</h1>
+            <p>Querida Hillary,</p>
+            <p>Lamento mucho no poder estar allí contigo en este día tan especial. Quiero que sepas que mi ausencia no fue por falta de ganas o porque no quisiera estar a tu lado celebrando. Hubiera querido estar allí para compartir contigo esta ocasión tan importante, pero lamentablemente, motivos personales me lo han impedido.</p>
+            <p class="highlight">Te pido disculpas de corazón por no poder acompañarte en esta celebración. Sin embargo, quiero que sepas que estoy pensando en ti y enviándote toda mi energía positiva y cariño en tu día. ¡Espero que tu cumpleaños esté lleno de risas, amor y momentos inolvidables!</p>
+            <p class="highlight">Espero que sigas con tus estudios y que todo esté bien con tu familia y amigos. Continúa esforzándote y creciendo, porque estoy seguro de que lograrás grandes cosas en la vida. ¡Celebra en grande y disfruta cada momento!</p>
+            <p class="highlight">Te deseo un año lleno de bendiciones, éxitos y sueños cumplidos. Eres una persona increíble y mereces todo lo mejor que la vida tiene para ofrecer. Disfruta cada instante y celebra en grande, porque te lo mereces.</p>
+            <div class="signature">
+                Con todo mi afecto y mejores deseos,<br>
+                Darío Salgado
+            </div>
+        </div>
+        <!-- Name scattered around -->
+        <div class="name" style="top: 5%; left: 10%;">Hillary</div>
+        <div class="name" style="top: 15%; left: 50%;">Hillary</div>
+        <div class="name" style="top: 25%; left: 30%;">Hillary</div>
+        <div class="name" style="top: 35%; left: 70%;">Hillary</div>
+        <div class="name" style="top: 45%; left: 20%;">Hillary</div>
+        <div class="name" style="top: 55%; left: 60%;">Hillary</div>
+        <div class="name" style="top: 65%; left: 40%;">Hillary</div>
+        <div class="name" style="top: 75%; left: 80%;">Hillary</div>
+        <div class="name" style="top: 85%; left: 10%;">Hillary</div>
+        <div class="name" style="top: 95%; left: 50%;">Hillary</div>
+    </div>
+
+    <script>
+        function createDecorations() {
+            // Create hearts
+            for (let i = 0; i < 5; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.style.width = Math.random() * 50 + 30 + 'px'; // Random size
+                heart.style.height = heart.style.width;
+                heart.style.top = Math.random() * 100 + 'vh';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = Math.random() * 5 + 5 + 's'; // Random duration
+                document.body.appendChild(heart);
+            }
+
+            // Create balloons
+            for (let i = 0; i < 5; i++) {
+                const balloon = document.createElement('div');
+                balloon.className = 'balloon';
+                balloon.style.width = Math.random() * 50 + 30 + 'px'; // Random size
+                balloon.style.height = balloon.style.width;
+                balloon.style.top = Math.random() * 100 + 'vh';
+                balloon.style.left = Math.random() * 100 + 'vw';
+                balloon.style.animationDuration = Math.random() * 5 + 5 + 's'; // Random duration
+                document.body.appendChild(balloon);
+            }
+        }
+
+        createDecorations();
+    </script>
+</body>
+</html>
